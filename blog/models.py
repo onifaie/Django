@@ -7,4 +7,7 @@ class obeid(models.Model):
 class customer(models.Model):
     name_customer=models.CharField(max_length=100,null=False)
     date_created=models.DateTimeField(auto_now=datetime.now)
+
+    def __str__(self) -> str:
+        return self.name_customer
     
