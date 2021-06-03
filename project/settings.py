@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'jop'
+    'jop',
+    'customer'
+
 ]
 
 MIDDLEWARE = [
@@ -126,6 +128,9 @@ STATIC_ROOT=os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'project/static')
 ]
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
